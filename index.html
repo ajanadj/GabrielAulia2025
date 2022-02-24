@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding Unicorns - The 25 Horses Puzzle</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar Section-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#puzzle" id="navbar__logo">FINDING UNICORNS</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#puzzle" class="navbar__links" id="puzzle-page">Puzzle</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#summary" class="navbar__links" id="summary-page">Summary</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#solution" class="navbar__links" id="solution-page">Solution</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Section -->
+        <div class="main" id="puzzle">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <img src="images/page1-1.svg" alt="pic" id="main__img">
+                </div>
+                <div class="main__content">
+                    <h1>FINDING UNICORNS</h1>
+                    <h2>THE 25 HORSES PUZZLE</h2>
+                    <p>Uh oh! You just bought 3 unicorns, but on your way home, they ran away and got lost in a sea of 22 horses! Because you were afraid that someone might steal your unicorns on the way home, you had applied an irreversible spell that temporarily disguised them to look exactly like normal horses (which you now regret doing), so all 25 of them look identical. You need to quickly find your unicorns because your daughter will get angry if you come home late - you had promised to cook her favorite dinner tonight. But how can you find your unicorns?</p>
+                    <p>Oh look, there’s a horse racing track nearby! You know your 3 unicorns are definitely going to be the fastest out of the other horses (because they're unicorns, duh). Let’s have the 25 of them race with each other to find your unicorns then. They all have different speeds, and these horses seem to be in a very good mood, so their speed will always stay constant at the time being. But it seems that the race track can only fit 5 horses at a time. Also, you have no watches or timers, and you’re in a hurry. So now, the question is, what would be the minimum number of races for you to find your unicorns?</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary Section -->
+        <div class="summary" id="summary">
+            <h1>SUMMARY OF THE RULES</h1>
+            <div class="summary__wrapper">
+                <div class="summary__card">
+                    <p>25 horses with different but constant speed</p>
+                    <div class="summary__img--container">
+                        <img src="images/page2-1.svg" alt="pic" id="summary__img1">
+                    </div>
+                </div>
+                <div class="summary__card">
+                    <p>no watch, no timer</p>
+                    <div class="summary__img--container">
+                        <img src="images/page2-2.svg" alt="pic" id="summary__img2">
+                    </div>
+                </div>
+                <div class="summary__card">
+                    <p>max. 5 horses per race</p>
+                    <div class="summary__img--container">
+                        <img src="images/page2-3.svg" alt="pic" id="summary__img3">
+                    </div>
+                </div>
+                <div class="summary__card">
+                    <h2>GOAL</h2>
+                    <p>find min. # of races to find 3 fastest horses</p>
+                    <div class="summary__img--container">
+                        <img src="images/page2-4.svg" alt="pic" id="summary__img4">
+                    </div>
+                </div>
+            </div>
+            <h1>Think about it for a while before seeing the solution!</h1>
+        </div>
+
+        <!-- Solution Section -->
+        <div class="solution" id="solution">
+            <h1>THE SOLUTION</h1>
+            <div class="solution__wrapper">
+                <div class="solution__card">
+                    <h1>1</h1>
+                    <h2>Find the 5 fastest horses in 5 races</h2>
+                    <p>Divide the 25 horses into 5 groups and do 5 races to find the fastest in each group.</p>
+                    <div class="solution__img--container">
+                        <img src="images/page3-1.svg" alt="pic" id="solution__img1">
+                    </div>
+                    <h1>+ 5 races</h1>
+                </div>
+                <div class="solution__card">
+                    <h1>2</h1>
+                    <h2>Find the fastest horse from the winners of the previous 5 races</h2>
+                    <p>One of your unicorns is definitely in the group of 5 winners from the previous 5 races. Have the 5 winners race each other to find the overall fastest horse. One unicorn found!</p>
+                    <div class="solution__img--container">
+                        <img src="images/page3-2.svg" alt="pic" id="solution__img2">
+                    </div>
+                    <h1>+ 1 race</h1>
+                </div>
+                <div class="solution__card">
+                    <h1>3</h1>
+                    <h2>Find the other two unicorns in a single race</h2>
+                    <p>Now, what if 2 or all of your unicorns were in the same group during the first 5 races? That means the final race will need to be between: the 2nd and 3rd fastest in the unicorn group (Group A) from the first 5 races, the 2nd and 3rd fastest in the 6th race (1st in Groups B and C), and the 2nd fastest in the group that contains the horse that won 2nd place in the 6th race (2nd in Group B).</p>
+                    
+                    <div class="solution__img--container">
+                        <img src="images/page3-3.svg" alt="pic" id="solution__img3">
+                    </div>
+                    <h1>+ 1 race</h1>
+                </div>
+            </div>
+            <h1>min. # of races required = 5 + 1 + 1 = 7 races</h1>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer" id="footer">
+            <div class="footer__container">
+                 <div class="footer__img--container">
+                    <img src="images/footer.svg" alt="pic" id="footer__img">
+                </div>
+            </div>
+            <div class="footer__content">
+                <p>Credits:</p>
+                <p>@Brian Design</p><a href="https://youtu.be/3-2Pj5hxwrw">HTML CSS Javascript Website Tutorial</a>
+                <p>https://www.svgrepo.com/</p>
+            </div>
+         </div>
+
+    <script src="app.js"></script>
+    </body>
+</html>
